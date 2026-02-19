@@ -16,32 +16,30 @@ A Streamlit application designed for real-time language translation. The app sup
 
 1. Clone this repository:
     ```bash
-    git clone https://github.com/yourusername/your-repo-name.git
+    git clone https://github.com/MurakondaPavani/translingua-ai-translator.git
     ```
 
 2. Navigate to the project directory:
     ```bash
-    cd your-repo-name
+    cd TransLingua_Pro-main
     ```
 
 3. Install the required dependencies:
     ```bash
     pip install -r requirements.txt
     ```
+4. Create a .env file and add your Groq API Key:
+    GROQ_API_KEY=your_api_key_here
+   
+5. Run the application:
+    streamlit run app.py
 
 ## Usage
 
-1. Set up your environment variables by creating a `.env` file in the project root with the following content:
-    ```
-    GROQ_API_KEY=your_groq_api_key
-    ```
-
-2. Run the Streamlit app:
-    ```bash
-    streamlit run app.py
-    ```
-
-3. Open the app in your web browser at `http://localhost:8501`.
+1. Open the app in your web browser at `http://localhost:8501`
+2. Select source and target languages
+3. Enter the text.
+4. Click the Translate button.
 
 ## Dependencies
 
