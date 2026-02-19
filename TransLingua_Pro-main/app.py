@@ -40,7 +40,7 @@ set_png_as_page_bg('img.jpg')
 os.environ['GROQ_API_KEY'] = os.getenv("GROQ_API_KEY")
 
 # Sidebar for navigation
-st.sidebar.image("logo1.png", use_column_width=True)
+st.sidebar.image("logo1.png", width=200)
 st.sidebar.title("Navigation")
 menu_options = ["Real-Time Language Translation", "File Upload and Translation", "Voice Input Translation"]
 menu_selection = st.sidebar.radio("Pick and Choose", menu_options)
@@ -87,7 +87,7 @@ if menu_selection == "Real-Time Language Translation":
     inputText = st.text_input("Enter text to translate")
 
     if inputText:
-        groqApi = ChatGroq(model="gemma-7b-It", temperature=0)
+        groqApi = ChatGroq(model="llama-3.1-8b-instant", temperature=0)
         outputparser = StrOutputParser()
         chainSec = prompt | groqApi | outputparser
 
@@ -131,7 +131,7 @@ elif menu_selection == "File Upload and Translation":
         st.text(content)
 
         if content:
-            groqApi = ChatGroq(model="gemma-7b-It", temperature=0)
+            groqApi = ChatGroq(model="llama-3.1-8b-instant", temperature=0)
             outputparser = StrOutputParser()
             chainSec = prompt | groqApi | outputparser
 
