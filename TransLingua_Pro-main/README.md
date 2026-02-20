@@ -55,3 +55,7 @@ A Streamlit application designed for real-time language translation. The app sup
 ## Contributing
 
 Feel free to open issues or submit pull requests if you have suggestions or improvements.
+## 🎥 Project Demo Video
+
+Watch the demo video here:
+https://drive.google.com/file/d/1lCTM65AMGRQ0lymYaX80VBpos3dqxFrc/view?usp=sharing
